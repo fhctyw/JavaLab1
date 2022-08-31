@@ -19,9 +19,9 @@ public class StringComparator implements Comparator<String> {
     }
 
     @Override
-    public int compare(String s1, String s2) {
-        long l1 = s1.chars().filter(ch -> ch == symbol).count();
-        long l2 = s2.chars().filter(ch -> ch == symbol).count();
+    public int compare(final String s1, final String s2) {
+        final long l1 = s1.chars().filter(ch -> ch == symbol).count();
+        final long l2 = s2.chars().filter(ch -> ch == symbol).count();
 
         return Long.compare(l1, l2) * -1;
     }

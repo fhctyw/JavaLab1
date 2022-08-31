@@ -17,8 +17,11 @@ public class Task10 {
         System.out.println(house);
         System.out.println("Start building");
         house.getRooms().get(4).paintRoom("Light gray");
+        System.out.println("paint room");
         house.getRooms().get(4).increaseArea(0.2);
+        System.out.println("increase area of room");
         house.getRooms().get(4).buildWindow();
+        System.out.println("build a new window");
         System.out.println("End building");
         System.out.println(house);
     }

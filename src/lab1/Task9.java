@@ -14,7 +14,7 @@ public class Task9 {
 		System.out.println(double1 + " / " + double2 + " = " + Calculator.div(double1, double2) + " real type = " + Calculator.div(double1, double2).getClass().getSimpleName());
 	}
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 
 		final long long1 = 14000040L;
 		final long long2 = 14144L;

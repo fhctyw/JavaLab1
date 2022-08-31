@@ -22,7 +22,8 @@ public class ListProduct {
         double sum = 0.0;
         for (final PairProduct pairProduct : listPairProduct) {
 
-            sum += pairProduct.getCount() * pairProduct.getProduct().getPrice() * (1 - pairProduct.getProduct().getDiscount());
+            final double discount = 1 - pairProduct.getProduct().getDiscount();
+            sum += pairProduct.getCount() * pairProduct.getProduct().getPrice() * discount;
         }
         return sum;
     }
