@@ -1,10 +1,9 @@
 package lab2.task1;
 
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.NoSuchElementException;
 
-class MyDeque<T> implements Iterable<T> {
+public class MyDeque<T> implements Iterable<T> {
     private int size = 0;
     private Node<T> first;
     private Node<T> last;
